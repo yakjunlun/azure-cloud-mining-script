@@ -5,7 +5,8 @@ cd ..
 rm -rf xmrig/
 git clone https://github.com/xmrig/xmrig.git
 cd xmrig
-git checkout v5.5.3
+sudo ./scripts/enable_1gb_pages.sh
+sudo ./scripts/randomx_boost.sh
 mkdir build
 cd build
 cmake ..
